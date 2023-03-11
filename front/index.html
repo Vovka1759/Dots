@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dots</title>
+</head>
+<body>
+    <div class="controls">
+        <input onchange="inputChanged()" type="file" id="inputFile" accept=".txt">
+        <button onclick="doSmth('flipClock')">FlipClock</button>
+        <button onclick="doSmth('flipCounterClock')">FlipCounterClock</button>
+        <button onclick="doSmth('reverse')">Reverse</button>
+        <!-- <div class="lineinputs"> -->
+            <button onclick="doLine()">Line</button>
+            <!-- <div>
+                <label for="x1Line">x1</label>
+                <input id="x1Line" type="number">
+                <label for="y1Line">y1</label>
+                <input id="y1Line" type="number">
+            </div>
+            <div>
+                <label for="x2Line">x2</label>
+                <input id="x2Line" type="number">
+                <label for="y2Line">y2</label>
+                <input id="y2Line" type="number">
+            </div> -->
+        <!-- </div> -->
+        <button onclick="downloadBlob()">Download</button>
+    </div>
+    
+    <canvas id="canvas" height="1000" width="1000"></canvas>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
